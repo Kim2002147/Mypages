@@ -1,0 +1,780 @@
+body {
+    margin: 0;   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+.header {   
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 30px;
+    align-items: last baseline;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.button-name {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    text-align: left;
+    border: none;
+    flex: 1;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+
+}
+.button-home {    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    margin-right: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    padding-top: 1px;
+}
+
+.button-home:hover {
+   
+    transform: translate(1px,2px);
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    background-color: rgb(221, 255, 99);
+    
+
+}
+
+.button-home:active {
+    transform: translate(-1px,-1px);
+    background-color: rgb(225, 217, 217);
+    font-size: 18px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    
+}
+
+.button-about{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    margin-right: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    padding-top: 1px;
+}
+
+.button-about:hover {
+    transform: translate(1px,2px);
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    background-color: rgb(221, 129, 129);
+}
+
+.button-about:active {
+    transform: translate(-1px,-1px);
+    background-color: rgb(225, 217, 217);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.button-projects{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    margin-right: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    padding-top: 1px;
+}
+
+.button-projects:hover {
+    transform: translate(1px,2px);
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    background-color: rgb(121, 134, 235);
+
+}
+
+.button-projects:active {
+    transform: translate(-1px,-1px);
+    background-color :rgb(225, 217, 217);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.button-contact {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    background-color :white;
+    padding-top: 1px;
+}
+
+.button-contact:hover {
+    transform: translate(1px,2px);
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    background-color: rgb(167, 246, 110);    
+}
+
+.button-contact:active {
+    transform: translate(-1px,-1px);
+    background-color: rgb(225, 217, 217);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);   
+}
+
+.bold-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.profile-text {
+    /* background-color: coral; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50px;
+    width:  500px;
+    height: 300px;
+    margin-right: 50px;
+}
+
+.profile-text-1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.linkin-icon {
+    padding-top: 20px;
+    height: 40px;
+    width: 40px;
+    transition: 0.3s;
+}
+
+.linkin-icon:hover {
+    height: 40px;
+    width: 40px;
+    transform: translate(0px,-8px);   
+}
+
+.github-icon {
+    margin-left: 20px;
+    padding-top: 15px;
+    height: 50px;
+    width: 50px;
+    transition: 0.3s;
+}
+    
+.github-icon:hover {
+    height: 50px;
+    width: 50px;
+    transform: translate(0px,-8px);
+}
+    
+
+
+.profile-pic-1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+#profile {       
+    /* background-color: rgb(222, 184, 135); */    
+    padding-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    flex-wrap: wrap;
+}
+.profile-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.tech-stack {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center ;
+    flex-wrap: wrap;
+    margin-top: 120px;
+    margin-bottom: 400px;   
+    align-items: last baseline;
+}
+
+.tech-stack-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    justify-content: center ;
+    padding-top: 80px;
+    padding-right: 70px;
+}
+
+.vline-icon {
+    padding-top: 20px;
+    height: 40px;
+    width: 40px;
+    margin: 30px;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+
+.html5-icon {
+    padding-top: 20px;
+    height: 40px;
+    width: 40px;
+    margin: 30px;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+
+.html5-icon:hover {
+    transform: translate(1px,-20px);
+}
+    
+.css-icon {
+    padding-top: 20px;
+    height: 40px;
+    width: 40px;
+    margin: 30px;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+
+.css-icon:hover {
+    transform: translate(1px,-20px);
+}  
+
+.javascript-icon {
+    padding-top: 20px;
+    height: 40px;
+    width: 40px;
+    margin: 30px;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+
+.javascript-icon:hover  {
+    transform: translate(1px,-20px);
+}
+
+.adobe-icon {
+    padding-top: 20px;
+    height: 40px;
+    width: 40px;
+    margin: 30px;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+
+.adobe-icon:hover  {
+    transform: translate(1px,-20px);
+}
+
+.toon-icon {
+    position: relative;
+    bottom: 9px;
+    height: 40px;
+    width: 40px;
+    margin: 30px;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+
+.toon-icon:hover  {
+    transform: translate(1px,-20px);
+}
+
+.flash-icon {
+    position: relative;
+    bottom: 4px;
+    padding-top: 20px;
+    height: 40px;
+    width: 50px;
+    margin: 30px;
+    padding-top: 50px;
+    transition: 0.3s;
+}
+
+.flash-icon:hover  {
+    transform: translate(1px,-20px);
+}
+
+#about-me {
+    /* background-color: rgb(222, 184, 135); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    margin-bottom: 600PX;
+}
+     
+.about-pic {
+    width:  400px;
+    height: 400px;
+    position: relative;
+    top: 60px;
+    border-radius: 20px;
+    margin-right: 60px;     
+}
+
+.about-me-text {
+    /* background-color: coral; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50px;
+    width:  400px;
+    height: 200px;
+    margin-right: 50px;
+    padding-bottom: 200px ;
+}
+
+.bold-text-about-1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(103, 103, 244);
+}
+
+.bold-text-about {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+ 
+#portfolio {
+    /* background-color: rgb(0, 255, 157); */
+    margin-top: 100px; 
+}
+
+.project-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    flex-wrap: wrap;
+    padding-left: 50px;
+
+}
+
+.project-1-copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    flex-wrap: wrap;
+    padding-left: 50px;
+
+}
+.demo-github-icons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 160px;
+
+}
+
+.demo-github-icons-2 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 160px;
+  
+}
+.portfolio-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(103, 103, 244);
+    /* background-color: coral; */
+    width: 300px;
+    position: relative;
+    top: -100px;
+}
+
+#portfolio-text-id {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(103, 103, 244);
+    /* background-color: coral; */
+    width: 300px;
+    position: relative;
+    top: -100px;
+}
+    
+.profile-text-1-1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: -40px;
+}
+
+.bold-text-1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: -40px;
+}
+     
+.anim-logo-1 {
+width: 150px;
+}
+
+.anim-logo-2 {
+width: 150px;
+}
+.anim-logo-3 {
+width: 150px;
+}
+
+.logo-gif-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    /* background-color: chocolate; */
+}
+
+.tv-ani-title {
+    font-family: 'Bungee Spice';
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(103, 103, 244);
+    padding-right: 450px ;
+}
+
+.jeorge-logo-gif {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.anim-gif-1 {
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.jeorge-logo-gif:hover .anim-gif-1 {
+    opacity: 100;
+    transform: translate(50px,10px);
+}
+
+.animation-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px ;
+    margin-left: 100px;
+    flex: 1;
+}
+
+.reserved-icon {
+    display: inline-block;
+    height: 20px;
+    width:  20px;
+    vertical-align: middle;
+}
+
+.reserved-text {
+display: inline-block;
+}
+
+.map-icon {
+    width: 40px;
+    height: 40px;
+    padding-top: 190px;
+    padding-left: 50px;
+}
+
+.mail-icon {
+    width: 40px;
+    height: 40px;
+    padding-top: 40px;
+    padding-left: 50px ;
+}
+
+.contact-me-text-1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(103, 103, 244);
+}
+
+
+#contact-me-text-2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.mp-icon {
+    transition: 0.3s;
+}
+
+.mp-icon:hover {
+    transform: translate(1px,-20px);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.fb-icon {
+transition: 0.3s;
+}
+
+.fb-icon:hover {
+transform: translate(1px,-20px);
+box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.insta-icon {
+transition: 0.3s;
+}
+
+.insta-icon:hover {
+transform: translate(1px,-20px);
+box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.tik-icon {
+transition: 0.3s;
+}
+
+.tik-icon:hover {
+transform: translate(1px,-20px);
+box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.link-icon {
+transition: 0.3s;
+}
+
+.link-icon:hover {
+transform: translate(1px,-20px);
+box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+    
+.last-container {
+    background-image: url("./icon/ligthblue\ gradient.jpg");
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 400px;
+    width: 100%;
+}
+
+
+.contact-email-div {
+    display: flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    align-items:last baseline;
+    column-gap: 500px;
+}
+
+.contact-me-div {
+    display: grid;
+    grid-template-columns: 100px 300px;
+}
+    
+.follow-me-grid {
+    flex: 1;
+    display:flex;
+    flex-direction: rows;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    padding-left: 100px;
+}
+
+.reserved-div {
+    text-align: center;
+}    
+
+@media only screen and (max-width:768px) {
+ 
+    .vline-icon{   
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    }   
+
+    .html5-icon{
+    height: 20px;
+    width: 20px;
+    margin: 10px;  
+    }
+               
+    .css-icon{
+    height: 20px;
+    width: 20px;
+    margin: 10px;  
+    }        
+    .javascript-icon{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+   
+    }
+        
+    .adobe-icon{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+   
+    }
+
+    .toon-icon{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+   
+    }
+    
+    .flash-icon{
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+   
+    }
+    
+    .profile-pic-1 {
+    width:  200px;
+    height: 200px;
+    position: relative;
+    top: 150px;
+    }    
+    .tech-stack { 
+    margin-bottom: 100px;          
+    }
+
+    #about-me {  
+    margin-bottom: 300px;
+    }
+                
+                
+    .demo-github-icons { 
+    top: 10px;        
+    }
+
+    .demo-github-icons-2 {
+        
+    top: 10px;
+            
+    } 
+
+    #portfolio {        
+    margin-top: 10px;  
+    }
+            
+    .about-me-text {
+            
+    height: 100px;
+    margin-right: 50px;
+    padding-bottom: 100px ;
+    }
+
+    .tv-ani-title {
+    font-family: 'Bungee Spice';
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(103, 103, 244);
+    padding-right: 1px ;
+    }
+                
+    .jeorge-logo-gif:hover .anim-gif-1 {
+    opacity: 100;
+    transform: translate(30px,5px);
+    }
+
+    .last-container {   
+    margin-top: 200px;      
+    }
+                           
+    .mp-icon {
+    width: 30px;
+    height: 30px;
+    }
+    
+    .fb-icon {
+    width: 30px;
+    height: 30px;
+    }
+                            
+                            
+                            
+    .insta-icon {
+    width: 30px;
+    height: 30px;
+    }
+        
+    .tik-icon {
+    width: 30px;
+    height: 30px;
+    }
+    
+    .link-icon {
+    width: 30px;
+    height: 30px;
+    }
+
+    .follow-me-grid {                          
+    column-gap: 20px;
+    }
+                                        
+    .project-1-copy {
+    flex-direction: column-reverse;  
+    
+    }
+
+    #portfolio-text-id {    
+    width: 300px;
+    position: relative;
+    top: -450px
+    }
+
+    .header {          
+        padding-left: 10px;
+        padding-right: 10px;      
+    }
+
+    .button-name {
+        font-size: 12px;
+    }
+
+    .button-home {
+    font-size: 12px;
+    }   
+        
+    .button-about {
+    font-size: 12px;
+    }
+    
+    .button-projects {
+    font-size: 12px;
+    }
+    
+    .button-contact {
+    font-size: 12px;
+    }
+        
+    #profile {       
+    padding-top: 2px;
+    }
+}
