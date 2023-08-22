@@ -1,0 +1,369 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;    
+}
+.p{
+    font-family:Arial, Helvetica, sans-serif;    
+}
+
+body{
+    font-family:'Allerta Stencil', sans-serif;
+    background-image: url('objects/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1300px;
+}
+
+.h1{
+  text-align: center;
+  padding-top: 100px;  
+  padding-bottom: 60px;
+  margin-top: 20px;
+  font-family: 'Allerta Stencil', sans-serif; 
+}
+
+.main-container{
+/* border: 1px solid black; */
+width: 70%;
+height:600px ;
+display:flex;
+flex-direction: rows;
+align-items: center;
+margin:auto;
+}
+
+.Rules{
+/* border: 1px solid black; */
+width:350px ;
+height:400px ;
+margin:auto;
+padding-left: 50px;
+padding-bottom:500px ;
+}
+
+.wrapper {
+/* border:3px solid black; */
+    width:800px;
+    height:700px;      
+    display: grid;
+    margin: auto;
+    grid-template-columns: 250px 250px 250px ; 
+    justify-content: center;      
+    background-image: url('objects/paper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+    overflow: hidden;
+}      
+
+/* buttons */
+.card-1,.card-2,.card-3,
+.card-4,.card-5,.card-6
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    border:3px solid black;
+    width:200px;
+    height:300px;
+    position: relative;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+.card-1:hover{   
+    width:215px;
+    height:340px;
+    transform: translateY(-10px); 
+    background-color: lightblue;
+}
+
+.card-2:hover{   
+    width:215px;
+    height:340px;
+    transform: translateY(-10px); 
+    background-color: lightgreen;
+}
+
+.card-3:hover{   
+    width:215px;
+    height:340px;
+    transform: translateY(-10px); 
+    background-color: lightyellow;
+}
+
+.card-4:hover{   
+    width:215px;
+    height:340px;
+    transform: translateY(-10px); 
+    background-color: lightgray;
+}
+
+.card-5:hover{   
+    width:215px;
+    height:340px;
+    transform: translateY(-10px); 
+    background-color: lightskyblue;
+}
+
+.card-6:hover{   
+    width:215px;
+    height:340px;
+    transform: translateY(-10px); 
+    background-color: lightyellow;
+}
+
+/* cards */
+.soldier-grunt{ 
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform:translate(-50%,0);
+    background:black;
+    color : white;
+    padding: 20px  50px;
+    border-radius:10px;
+    z-index: 2;
+    cursor:pointer;
+    border: none;  
+    outline: none;    
+ }
+ .soldier-miner{ 
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform:translate(-50%,0);
+    background:black;
+    color : white;
+    padding: 20px  50px;
+    border-radius:10px;
+    z-index: 2;
+    cursor:pointer;
+    border: none;  
+    outline: none;    
+ }
+ .Tank{ 
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform:translate(-50%,0);
+    background:black;
+    color : white;
+    padding: 20px  50px;
+    border-radius:10px;
+    z-index: 2;
+    cursor:pointer;
+    border: none;  
+    outline: none;    
+ }
+ .soldier-sniper{ 
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform:translate(-50%,0);
+    background:black;
+    color : white;
+    padding: 20px  50px;
+    border-radius:10px;
+    z-index: 2;
+    cursor:pointer;
+    border: none;  
+    outline: none;    
+ }
+ .attack-dog{ 
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform:translate(-50%,0);
+    background:black;
+    color : white;
+    padding: 20px  50px;
+    border-radius:10px;
+    z-index: 2;
+    cursor:pointer;
+    border: none;  
+    outline: none;    
+ }
+ .soldier-bazooka{ 
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform:translate(-50%,0);
+    background:black;
+    color : white;
+    padding: 20px  50px;
+    border-radius:10px;
+    z-index: 2;
+    cursor:pointer;
+    border: none;  
+    outline: none;    
+ }
+
+/* popup div */
+ .pop-up-div{
+    border:1px solid black;
+    width: 35%;
+    height: 600px;
+    margin: auto;
+    background: white;
+    z-index: 3;
+    position: relative;
+    transform: translate(0, 0) scale(0.1);
+    overflow: hidden;
+    top:-2000px ;
+    left:25px;
+    visibility:hidden;
+    transition: transform  1s,  0.7s;
+    background-image: url('objects/paper-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ 
+ .open-pop-up-div{
+    top: -550px;
+    visibility:visible ;
+    transform: translate(0, 0) scale(1);
+    border-radius: 10px;
+ }
+
+ .pop-up-div-win{
+    border:1px solid black;
+    width: 35%;
+    height: 800px;
+    margin: auto;
+    background: white;
+    z-index: 3;
+    position: relative;
+    transform: translate(0, 0) scale(0.1);
+    overflow: hidden;
+    top:-2000px ;
+    left:25px;
+    visibility:hidden;
+    transition: transform  1s,  0.7s;
+    background-image: url('objects/win.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+ }
+ 
+ .open-pop-up-div-win{
+    top: -1200px;
+    visibility:visible ;
+    transform: translate(0, 0) scale(1);
+    border-radius: 10px;
+ }
+
+ .pop-up-lose{
+    border:1px solid black;
+    width: 35%;
+    height: 700px;
+    margin: auto;
+    background: white;
+    z-index: 3;
+    position: relative;
+    transform: translate(0, 0) scale(0.1);
+    overflow: hidden;
+    top: -3000px ;
+    left:25px;
+    visibility:hidden;
+    transition: transform  1s,  0.7s;
+    background-image: url('objects/lose.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ 
+ .open-pop-up-lose{
+    top: -1995px;
+    visibility:visible ;
+    transform: translate(0, 0) scale(1);
+    border-radius: 10px;
+ }
+
+ .tex-video-button{
+    /* border:1px solid black; */
+    width: 200px;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    display: block;
+    margin: auto;    
+    transform: translate(0, 0) scale(1.5);
+    z-index:3; 
+ }
+    
+.video-and-button{
+    /* border:1px solid black; */
+    display:flex;
+    flex-direction: column;      
+}
+
+.play-again-button{
+background-color: white;
+border-color: rgb(108, 117, 125);
+color: rgb(108, 117, 125);
+height: 50px;
+width: 200px;
+vertical-align: center;
+align-items: center;
+border-radius: 11px;
+font-size: large;
+font-weight: bold;
+}
+
+.play-again-button:hover {
+
+background-color: rgb(108, 117, 125);
+color: white;
+}
+
+.result-div{
+/* border:   1px solid black; */
+height: 200px;
+width: 300px;
+padding-bottom: 530px;
+padding-left: 50px;
+margin: auto;
+}
+ 
+.reset-button{
+       
+    background-color: rgb(46, 164, 79);
+    color : white;
+    margin-top: 100px;
+    padding: 20px  50px;
+    border-radius:15px ;   
+    cursor:pointer;
+    border: none;  
+    outline: none;   
+    font-size: large;
+    font-weight: bold; 
+    transition: box-shadow  2s; 
+}
+
+.reset-button:hover {
+
+    background-color:white;
+    border: none;
+    color:rgb(46, 164, 79);       
+    box-shadow:5px 5px 10px rgba(0,0,0,0.5);    
+    }
+    
+    .test-button{
+        background-color: rgb(46, 164, 79);
+        color : white;
+        margin-top: 100px;
+        padding: 20px  50px;
+        border-radius:15px ;   
+        cursor:pointer;
+        border: none;  
+        outline: none;   
+        font-size: large;
+        font-weight: bold; 
+        transition: box-shadow  2s; 
+    }
+
+
+    

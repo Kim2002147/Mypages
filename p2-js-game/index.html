@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kim Peteza</title>
+        <link rel="icon" href="data:,">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bungee+Spice&family=Roboto:wght@400;700&display=swap" rel="stylesheet" src="objects/AllertaStencil-Regular.ttf">
+        <script src="index.js" defer></script>   
+    </head>
+    <body>        
+        <audio  autoplay = "" loop=""  volume="" src="objects/drums.mp3" controls></audio>
+        <h1 class="h1">Drawing Battles War</h1>
+
+
+        <div class="main-container">     
+            <div class="Rules">
+                <h2>Rules of the Game</h2>
+                <br>
+                <p>Win 5 times  </p>
+                <br>
+                <p> <b>You Win !!!!</b></p>
+                <br>
+                <p>Loose 5 times</p>
+                <br>
+                <p> <b>You loose !!!!</b></p>
+            </div>
+
+            <div class="wrapper">
+                <div class="card-1">
+                    <img class= "soldier-grunt-pic" src="objects/grunts.png" alt="pic of soldier grunt">
+                    <button class ="soldier-grunt" onclick="openPopup()">grunt soldier</button>
+               </div>            
+                <div class="card-2">
+                    <img class= "soldier-miner-pic" src="objects/miner.png" alt="pic of soldier miner">
+                    <button class= "soldier-miner" onclick="openPopup()">soldier miner</button>
+                </div>           
+                <div class="card-3">
+                    <img class= "tank-pic" src="objects/tank.png" alt="pic of tank">
+                    <button class= "Tank" onclick="openPopup()" >tank</button>
+                </div>           
+                <div class="card-4">
+                    <img class= "sniper-pic" src="objects/sniper.png" alt="pic of sniper">
+                    <button class= "soldier-sniper"  onclick="openPopup()">Sniper</button>
+                </div>         
+                <div class="card-5">
+                    <img class= "dog-pic" src="objects/attackdog.png" alt="pic of dog">
+                    <button class= "attack-dog" onclick="openPopup()" >Attack Dog</button>
+                </div>           
+                <div class="card-6">
+                    <img class= "soldier-bazooka-pic" src="objects/bazooka.png" alt="pic of soldier bazooka">
+                    <button class= "soldier-bazooka"  onclick="openPopup()">Bazooka soldier</button>
+                </div>
+            </div>
+
+            <div class="result-div">
+                <br>
+                <h3>Score</h3>
+                <br>
+                 <p class="js-result"></p>
+                 <br>
+                 <p class="js-moves"></p>            
+                 <br>
+                 <p class="js-score"></p>
+                 <button class ="reset-button">Reset Score</button>
+            </div>
+        </div>  
+
+        <div class = "pop-up-div" id="pop-up-div">
+                <div class="tex-video-button">
+                   <div class="video-and-button">
+                       <video class = "video" id ="change-video" autoplay loop src="objects/sniperwinvsgrunt.mp4" alt="movie clip "></video> 
+                       <button class="play-again-button" onclick="closepopup()" >Play Again</button>
+                   </div>
+                </div>    
+        </div> 
+        <div class = "pop-up-div-win" id="pop-up-div-win">
+            <div class="tex-video-button">
+               <div class="video-and-button">
+                   <button class="play-again-button" onclick="closepopupWin()">PLAY AGAIN</button>
+               </div>
+            </div>   
+        </div> 
+        <div class = "pop-up-lose" id="pop-up-lose">
+            <div class="tex-video-button">
+               <div class="video-and-button">               
+                   <button class="play-again-button" onclick="closepopupLose()" >PLAY AGAIN</button>
+               </div>
+            </div>    
+        </div>  
+</body>
+</html>
